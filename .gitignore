@@ -1,0 +1,10 @@
+./rsna-atd.keras
+./modelo/*
+./modelo/rsna-atd.keras
+./venv/*
+./venv
+./venv/lib/python3.6/site-packages/tensorflow/python/keras/applications/*
+.__pycache__/*
+venv
+__pycache__
+__pycache__/*
