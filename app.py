@@ -6,7 +6,7 @@ from PIL import Image
 
 class App:
     def __init__(self):
-        self.titulo = "Abdominal Trauma Detection"
+        self.titulo = "Predicción del cáncer de piel"
         
 
     def run(self):
@@ -14,16 +14,16 @@ class App:
         # Titulo de la aplicación
         st.title(self.titulo)
 
-        st.title("Bienvenido a la Aplicación 'name'")
+        st.title("Bienvenido")
         # pasos
         st.subheader("Pasos")
         st.markdown("""
-        1. Cargar una imagen de rayos X.
-        2. Predecir si el paciente tiene o no trauma abdominal.
+        1. Cargar una imagen de la muestra.
+        2. Observar la prediccion debajo de la imagen.
         """)
         # Cargar imagen
         st.subheader("Cargar imagen")
-        uploaded_file = st.file_uploader("Elige una imagen de rayos X...", type="jpg")
+        uploaded_file = st.file_uploader("Elige la muestra de cancer...", type="jpg")
         if uploaded_file is not None:
             image = Image.open(uploaded_file)
             st.image(image, caption='Imagen cargada.', use_column_width=True)
