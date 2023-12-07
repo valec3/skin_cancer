@@ -26,7 +26,6 @@ class App:
         uploaded_file = st.file_uploader("Elige la muestra de cancer...", type="jpg")
         if uploaded_file is not None:
             image = Image.open(uploaded_file)
-            image.thumbnail((300, 300))
             st.image(image, caption='Imagen cargada.', use_column_width=True)
             st.write("")
             st.write("Clasificando...")
